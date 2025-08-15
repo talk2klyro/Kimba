@@ -1,0 +1,142 @@
+<!<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kimba Day (Amina) — RCHP | Personal Site</title>
+  <style>
+    :root {
+      --bg: #f9fafb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #3b82f6;
+      --accent-light: #93c5fd;
+      --shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 16px;
+    }
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 12px 0; position: sticky; top: 0;
+      background-color: var(--bg);
+    }
+    nav a {
+      margin-left: 16px; color: var(--text);
+      text-decoration: none; font-weight: 500;
+    }
+    nav a:hover { color: var(--accent); }
+    .hero {
+      text-align: center; margin-top: 20px;
+    }
+    .avatar-wrap { position: relative; display: inline-block; }
+    .avatar {
+      width: 140px; height: 140px; border-radius: 50%;
+      overflow: hidden; background-color: #e5e7eb;
+      border: 4px solid white; box-shadow: var(--shadow);
+    }
+    .halo { position: absolute; inset: -14px; }
+    .halo svg { width: 168px; height: 168px; }
+    @keyframes breathe {
+      0%, 100% { transform: scale(1); opacity: 0.6; }
+      50% { transform: scale(1.05); opacity: 1; }
+    }
+    .halo circle { animation: breathe 4s ease-in-out infinite; transform-origin: center; }
+    h1 { font-size: 1.8rem; font-weight: 700; margin-top: 12px; }
+    p.muted { color: var(--muted); margin-top: 4px; }
+    .btn {
+      display: inline-block; padding: 10px 16px;
+      border-radius: 9999px; border: none; cursor: pointer;
+      background: var(--accent); color: white; font-weight: 600;
+      margin-top: 12px; text-decoration: none;
+      box-shadow: var(--shadow);
+    }
+    .btn:hover { background: var(--accent-light); }
+    section { margin-top: 32px; }
+    .card {
+      background-color: var(--card); border-radius: 20px;
+      padding: 20px; box-shadow: var(--shadow);
+      margin-bottom: 20px;
+    }
+    h2 { font-size: 1.3rem; margin-bottom: 8px; }
+    ul { list-style: none; padding: 0; }
+    li { margin-bottom: 8px; }
+    footer {
+      text-align: center; font-size: 0.85rem; color: var(--muted);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>Kimba Day (Amina)</strong>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#academics">Academics</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>  <div class="hero">
+    <div class="avatar-wrap">
+      <div class="halo">
+        <svg viewBox="0 0 168 168" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="grad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#93c5fd" stop-opacity="0.8"/>
+              <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="84" cy="84" r="78" stroke="url(#grad)" stroke-width="8" fill="none"/>
+        </svg>
+      </div>
+      <div class="avatar">
+        <!-- simple placeholder avatar -->
+        <svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="70" cy="45" r="25" fill="#fde68a"/>
+          <rect x="30" y="80" width="80" height="50" rx="20" fill="#93c5fd"/>
+        </svg>
+      </div>
+    </div>
+    <h1>Kimba Day (Amina)</h1>
+    <p class="muted">Registered Community Health Practitioner (RCHP) · CHEW Student</p>
+    <a class="btn" href="mailto:kimba.day@example.com">Contact Me</a>
+  </div>  <section id="about">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>Compassionate CHEW student with a passion for preventive care and community outreach. I aim to lead community immunization and maternal health programs across Northern Nigeria.</p>
+    </div>
+  </section>  <section id="academics">
+    <div class="card">
+      <h2>Academics</h2>
+      <ul>
+        <li>Alma'arif College of Nursing, Midwifery & Health Sciences</li>
+        <li>Course: Community Health Extension Workers (CHEW)</li>
+        <li>Expected Graduation: 30 August 2025</li>
+      </ul>
+    </div>
+  </section>  <section id="portfolio">
+    <div class="card">
+      <h2>Portfolio</h2>
+      <ul>
+        <li>Research: Barriers to Timely Antenatal Visits — 2025</li>
+        <li>Volunteer: Health Educator, Youth for Wellness Initiative</li>
+        <li>Certifications: BLS, First Aid, HIPAA Awareness</li>
+      </ul>
+    </div>
+  </section>  <section id="contact">
+    <div class="card">
+      <h2>Contact</h2>
+      <ul>
+        <li>Email: kimba.day@example.com</li>
+        <li>WhatsApp: +234 903 219 9073</li>
+      </ul>
+    </div>
+  </section>  <footer>© <span id="year"></span> Kimba Day (Amina)</footer>  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script></body>
+</html>
